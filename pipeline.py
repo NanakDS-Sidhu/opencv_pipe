@@ -14,6 +14,6 @@ def process_image(image_path):
     # cv2.imwrite(image_path.split(".")[0]+"gray.jpg", gray)
     # cv2.imwrite(image_path.split(".")[0]+"blur.jpg", blur)
     # cv2.imwrite(image_path.split(".")[0]+"edges.jpg", edges)
-    cv2.imwrite("output/resized.jpg", resized)
+    cv2.imwrite("output/"+image_path.split(".")[0].split("/")[-1]+"resized.jpg", resized)
 
     return resized
